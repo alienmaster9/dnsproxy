@@ -8,4 +8,4 @@ FROM scratch
 
 COPY --from=builder /dnsproxy/dnsproxy .
 
-entrypoint ["./dnsproxy]
+entrypoint ["./dnsproxy -u 8.8.8.8:53]
